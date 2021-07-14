@@ -8,7 +8,7 @@ pipeline {
   environment {
     repoOwner = "${repoOwner}"
   }
-  stages('Shell Test & Build')
+  stages('Shell Test & Build') {
     stage('Tests') {
       steps {
         sh '''
