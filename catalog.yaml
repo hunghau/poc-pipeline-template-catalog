@@ -1,0 +1,4 @@
+name: efd-poc
+displayName: EFD POC Pipeline Template Catalog
+version: 1
+type: pipeline-template-catalog

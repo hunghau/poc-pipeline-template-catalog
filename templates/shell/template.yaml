@@ -1,0 +1,15 @@
+version: 1
+type: pipeline-template
+name: Node.js App Multibranch Pipeline
+templateType: MULTIBRANCH
+description: Test, Build and Deploy for Standard Node.js Applications. 
+parameters:
+  - name: repoOwner
+    type: string
+    displayName: Repository Owner
+multibranch:
+  branchSource:
+    github:
+      id: helloworld-shell
+      repoOwner: ${repoOwner}
+      repository: 'helloworld-shell'
